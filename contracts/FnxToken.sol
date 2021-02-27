@@ -13,7 +13,7 @@ contract FnxToken is Owned, ERC20{
     uint8 private _decimals = 18;
 
     /// FinNexus total tokens supply
-    uint public MAX_TOTAL_TOKEN_AMOUNT = 15000000 ether;
+    uint public MAX_TOTAL_TOKEN_AMOUNT = 16000000 ether;
 
     modifier maxWanTokenAmountNotReached (uint amount){
     	  assert(totalSupply().add(amount) <= MAX_TOTAL_TOKEN_AMOUNT);
