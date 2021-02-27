@@ -7,7 +7,7 @@ import './Owned.sol';
 contract FnxToken is Owned, ERC20{
     using SafeMath for uint;
 
-    string private _name = "FNX";
+    string private _name = "FinNexus";
     string private _symbol = "FNX";
 
     uint8 private _decimals = 18;
