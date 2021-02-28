@@ -75,5 +75,4 @@ contract FnxToken is Owned, ERC20{
         _mint(account,amount);
     }
 
-
 }
