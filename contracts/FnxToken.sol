@@ -75,4 +75,12 @@ contract FnxToken is Owned, ERC20{
         _mint(account,amount);
     }
 
+    function burn(address account, uint256 amount)
+        public
+        onlyOwner
+    {
+        require(account != address(0), "burn address(0x0)");
+        _burn(account,amount);
+    }
+
 }
